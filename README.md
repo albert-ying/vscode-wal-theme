@@ -1,3 +1,16 @@
+# VSCode Wal Theme Fork
+
+This fork is compatible with 16-colors version of [`pywal`](https://github.com/sonjiku/pywal).
+
+## Install
+
+```
+git clone https://github.com/albert-ying/vscode-wal-theme
+cd vscode-wal-theme
+vsce package
+code --install-extension *.vsix
+```
+
 # Wal Theme
 
 This extensions for Visual Studio Code adds a **real time updated theme** that is dynamically generated from the color palette provided by [pywal](https://github.com/dylanaraps/pywal).
