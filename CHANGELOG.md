@@ -7,7 +7,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+<<<<<<< HEAD
 ## [1.1.0]
+=======
+## [1.2.0] - 2021-09-21
+
+### Added
+
+- Support for [fast bracket pair colorization](https://code.visualstudio.com/updates/v1_60#_high-performance-bracket-pair-colorization)
+
+## [1.1.3] - 2021-08-30
+
+### Fixed
+
+- Debug token expression barely visible with a light theme
+
+## [1.1.2] - 2021-08-22
+
+### Fixed
+
+- Autoupdate anomalies
+
+## [1.1.1] - 2021-08-14
+
+### Fixed
+
+- `colors.json` causing errors while loading new colors
+
+## [1.1.0] - 2021-08-09
+>>>>>>> da5c232de8d0859eb12f1a495c36c5267a992126
 
 ### Changed
 

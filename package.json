@@ -5,7 +5,11 @@
 	"publisher": "dlasagno",
 	"author": "Daniele Lasagno",
 	"license": "MIT",
+<<<<<<< HEAD
 	"version": "1.1.0",
+=======
+	"version": "1.2.0",
+>>>>>>> da5c232de8d0859eb12f1a495c36c5267a992126
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/dlasagno/vscode-wal-theme"
@@ -87,6 +91,7 @@
 		"typescript": "^3.9.10"
 	},
 	"dependencies": {
+		"chokidar": "^3.5.2",
 		"color": "^3.1.3"
 	}
 }
