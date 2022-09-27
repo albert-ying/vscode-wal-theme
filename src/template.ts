@@ -9,13 +9,13 @@ export default (colors: Color[], bordered: boolean) => ({
     // --
     
     // BASE COLOURS
-    'focusBorder': colors[8].hex()+'77',
+    'focusBorder': colors[0].hex()+'77',
     'foreground': colors[15].hex()+'99',
     'widget.shadow': colors[0].darken(0.25).hex(),
     'selection.background': colors[15].hex()+'77',
     
     // TEXT COLOURS
-    'textBlockQuote.background': colors[0].lighten(0.20).hex(),
+    'textBlockQuote.background': colors[0].hex(),
     'textLink.foreground': colors[9].hex(),
     'textLink.activeForeground': colors[9].hex(),
     'textPreformat.foreground': colors[15].hex(),
@@ -26,12 +26,12 @@ export default (colors: Color[], bordered: boolean) => ({
     //'button.hoverBackground': '',
     
     // DROPDOWN CONTROL
-    'dropdown.background': colors[0].lighten(0.20).hex(),
+    'dropdown.background': colors[0].hex(),
     'dropdown.foreground': colors[15].hex()+'99',
     'dropdown.border': colors[8].hex()+'77',
     
     // INPUT CONTROL
-    'input.background': colors[0].lighten(0.20).hex(),
+    'input.background': colors[0].hex(),
     'input.border': colors[8].hex()+'55',
     'input.foreground': colors[15].hex(),
     'input.placeholderForeground': colors[8].hex()+'77',
@@ -44,7 +44,7 @@ export default (colors: Color[], bordered: boolean) => ({
     'inputValidation.warningBorder': colors[11].hex(),
 
     // SCROLLBAR CONTROL
-    'scrollbar.shadow': colors[8].hex()+'33',
+    'scrollbar.shadow': colors[0].hex()+'33',
     'scrollbarSlider.background': colors[15].hex()+'44',
     'scrollbarSlider.hoverBackground': colors[15].hex()+'77',
     'scrollbarSlider.activeBackground': colors[15].hex()+'92',
@@ -71,7 +71,7 @@ export default (colors: Color[], bordered: boolean) => ({
     // ACTIVITY BAR
     'activityBar.background': colors[0].hex(),
     'activityBar.foreground': colors[8].hex(),
-    'activityBar.border': bordered ? colors[8].hex()+'33' : colors[0].hex(),
+    'activityBar.border': bordered ? colors[0].hex()+'33' : colors[0].hex(),
     'activityBarBadge.background': colors[9].hex(),
     'activityBarBadge.foreground': colors[0].hex(),
     
@@ -83,12 +83,12 @@ export default (colors: Color[], bordered: boolean) => ({
     'sideBarSectionHeader.foreground': colors[15].hex()+'99',
     
     // EDITOR GROUPS & TABS
-    'editorGroup.border': colors[8].hex()+'33',
-    //'editorGroup.background': colors[0].lighten(0.20).hex(), // deprecated
+    'editorGroup.border': colors[0].hex()+'33',
+    //'editorGroup.background': colors[0].hex(), // deprecated
     'editorGroupHeader.noTabsBackground': colors[0].hex(),
     'editorGroupHeader.tabsBackground': colors[0].hex(),
     'editorGroupHeader.tabsBorder': bordered ? colors[8].hex()+'33' : colors[0].hex(),
-    'tab.activeBackground': bordered ? colors[0].lighten(0.20).hex() : colors[0].hex(),
+    'tab.activeBackground': bordered ? colors[0].hex() : colors[0].hex(),
     'tab.activeForeground': colors[15].hex(),
     'tab.border': bordered ? colors[8].hex()+'33' : colors[0].hex(),
     'tab.activeBorder': bordered ? undefined : colors[9].hex(),
@@ -101,16 +101,16 @@ export default (colors: Color[], bordered: boolean) => ({
     'tab.unfocusedInactiveForeground': colors[15].hex()+'99',
     
     // EDITOR
-    'editor.background': bordered ? colors[0].lighten(0.20).hex() : colors[0].hex(),
+    'editor.background': bordered ? colors[0].hex() : colors[0].hex(),
     'editor.foreground': colors[15].hex(),
     'editorLineNumber.foreground': colors[8].hex()+'92',
     'editorLineNumber.activeForeground': colors[8].hex(),
     'editorCursor.foreground': colors[9].hex(),
     
-    'editor.selectionBackground': colors[8].hex()+'77',
+    'editor.selectionBackground': colors[15].hex()+'77',
     'editor.inactiveSelectionBackground': colors[8].hex()+'44',
-    'editor.selectionHighlightBackground': colors[8].hex()+'44',
-    'editor.selectionHighlightBorder': colors[8].hex(),
+    'editor.selectionHighlightBackground': colors[15].hex()+'44',
+    'editor.selectionHighlightBorder': colors[15].hex(),
     
     'editor.wordHighlightBackground': colors[8].hex()+'44',
     'editor.wordHighlightStrongBackground': colors[10].hex()+'77',
@@ -164,29 +164,29 @@ export default (colors: Color[], bordered: boolean) => ({
     'diffEditor.removedTextBackground': colors[11].hex()+'33',
 
     // EDITOR WIDGET
-    'editorWidget.background': colors[0].lighten(0.20).hex(),
-    'editorSuggestWidget.background': colors[0].lighten(0.20).hex(),
+    'editorWidget.background': colors[0].hex(),
+    'editorSuggestWidget.background': colors[0].hex(),
     'editorSuggestWidget.border': colors[8].hex()+'22',
     'editorSuggestWidget.highlightForeground': colors[9].hex(),
     'editorSuggestWidget.selectedBackground': colors[8].hex()+'33',
-    'editorHoverWidget.background': colors[0].lighten(0.20).hex(),
+    'editorHoverWidget.background': colors[0].hex(),
     'editorHoverWidget.border': colors[8].hex()+'22',
 
     // DEBUG EXCEPTION
     'debugExceptionWidget.border': colors[8].hex()+'33',
-    'debugExceptionWidget.background': colors[0].lighten(0.20).hex(),
+    'debugExceptionWidget.background': colors[0].hex(),
 
     // EDITOR MARKER
-    'editorMarkerNavigation.background': colors[0].lighten(0.20).hex(),
+    'editorMarkerNavigation.background': colors[0].hex(),
 
     // PEEK VIEW
     'peekView.border': colors[8].hex()+'33',
-    'peekViewEditor.background': colors[0].lighten(0.20).hex(),
+    'peekViewEditor.background': colors[0].hex(),
     'peekViewEditor.matchHighlightBackground': colors[9].hex()+'44',
-    'peekViewResult.background': colors[0].lighten(0.20).hex(),
+    'peekViewResult.background': colors[0].hex(),
     'peekViewResult.fileForeground': colors[15].hex()+'99',
     'peekViewResult.matchHighlightBackground': colors[9].hex()+'44',
-    'peekViewTitle.background': colors[0].lighten(0.20).hex(),
+    'peekViewTitle.background': colors[0].hex(),
     'peekViewTitleDescription.foreground': colors[15].hex()+'99',
     'peekViewTitleLabel.foreground': colors[15].hex()+'99',
 
@@ -215,7 +215,7 @@ export default (colors: Color[], bordered: boolean) => ({
     'statusBar.border': bordered ? colors[8].hex()+'33' : colors[0].hex(),
     'statusBar.debuggingBackground': colors[11].hex(),
     'statusBar.debuggingForeground': colors[0].hex()+'dd',
-    'statusBar.noFolderBackground': colors[0].lighten(0.20).hex(),
+    'statusBar.noFolderBackground': colors[0].hex(),
     'statusBarItem.activeBackground': '#00000050',
     'statusBarItem.hoverBackground': '#00000030',
     'statusBarItem.prominentBackground': colors[8].hex()+'33',
@@ -264,7 +264,7 @@ export default (colors: Color[], bordered: boolean) => ({
     // WELCOME PAGE
     // 'welcomePage.buttonBackground': '?'
     // 'welcomePage.buttonHoverBackground': '?'
-    'walkThrough.embeddedEditorBackground': colors[0].lighten(0.20).hex(),
+    'walkThrough.embeddedEditorBackground': colors[0].hex(),
     
     // GIT
     'gitDecoration.modifiedResourceForeground': colors[11].hex()+'cc',
